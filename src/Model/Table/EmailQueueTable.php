@@ -38,6 +38,8 @@ class EmailQueueTable extends Table
             ],
             ]
         );
+        // avoid error: table without pk
+        $this->primaryKey('id');
     }
 
     /**
